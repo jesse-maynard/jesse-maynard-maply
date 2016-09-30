@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Nova+Round" rel="stylesheet">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="maply.js"></script>
+
+</head>
+
+<body>
+<!-- Nav Bar------------------------------------------------------------------>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><input id="zipBox" class="col-md-12" style="background-color: transparent; border-color: transparent; color: black;"
+                        type="text" placeholder="map.ly">
+                </a>
+             
+                <button id="lookUpZipCode" class="btn" style="background-color: transparent; height: 50px"><span class= "glyphicon glyphicon-search" style= "color: black;"></span></button>
+                <button id="clearCards" class="btn btn-danger" style="height: 50px; width: 50px;"><span class="glyphicon glyphicon-refresh"></span></button>
+               <a href="https://www.facebook.com/"> <button id= "share" class="btn btn-primary" style= "border-color: transparent; height: 50px; width: 50px;"><span class="glyphicon glyphicon-user"></span></button></a>
+            </div>
+    </nav>
+<!-- Cards Div--------------------------------------------------------------->
+    <div class= "container">
+        <div class= "row" id= "cards">
+            </div>
+            </div>
+<!-- Temp Cards Div---------------------------------------------------------->
+        
+            <div style= "display: none;" id="tempDiv">
+                    <div  class= "row col-sm-3 col-md-3 col-xs-12" style=" margin: 25px; height: 400px; width: 200px; border-radius: 10px; background-size: 100% 100%;">
+                        <div id="mapBack" style="height: 100%; width: 100%;"></div>
+                    <span style= "text-align: center; font-size: 8pt; color: black; padding:  30px;">@@City@@</span>
+                    
+        </div>
+        </div>
+            <div style= "display: none;" id="fakeDiv">
+                    <div id="fake" class= "row col-sm-3 col-md-3 col-xs-12" style=" margin: 25px; height: 80%; border-radius: 10px; background-size: 100% 100%;">
+                    <div class= "row col-md-12 col-sm-12 col-xs-12" style= "text-align: center; font-size: 14pt; color: white; text-shadow: 1px 1px #222; padding:  30px;">@@City@@</div>
+                    
+        </div>
+        </div>
+
+          
+<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOZb9xNTtO17Csp2_l648ipebDrhyK9Y8&callback=initMap">
+    </script>
+</body>
+
+</html>
